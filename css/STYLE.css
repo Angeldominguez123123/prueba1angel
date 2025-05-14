@@ -1,0 +1,230 @@
+:root {
+  --color-general: #66615b;
+  --color-titulos: #111111;
+  --color-fondo-azul: #f5fafd;
+  --color-iconos: #f55f44;
+  --color-footer: #252422;
+  --color-letra-footer: #ffffff;
+
+  --font-titulos: 'Dosis', sans-serif;
+  --font-contenido: 'Roboto', sans-serif;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: white !important;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  opacity: 0.85;
+}
+
+.navbar-nav .btn-outline-light {
+  padding: 6px 20px;
+  margin-left: 10px;
+}
+
+body {
+  font-family: var(--font-contenido);
+  color: var(--color-general);
+  margin: 0;
+  padding: 0;
+	background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titulos);
+  color: var(--color-titulos);
+}
+
+.hero {
+  background: url("../img/bg-site.jpeg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+	color: white;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--color-iconos);
+}
+.feature-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  text-align: left;
+  padding: 30px 20px;
+}
+
+.feature-box img.icon {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+#features {
+  padding: 60px 0;
+}
+#about {
+  background-color: white;
+}
+
+#about ul,
+.hero ul {
+  list-style: none;
+  padding: 0;
+	
+}
+
+#about ul li::before,
+.hero ul li::before {
+  content: '✓';
+  font-size: 0.9rem;
+  color: var(--color-iconos);
+  background-color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+#screenshots {
+  background-color: var(--color-fondo-azul);
+  padding: 60px 0;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: var(--color-titulos);
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: var(--color-general);
+}
+.carousel-inner img {
+  border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+#download {
+  background: url('../img/bg-site.jpeg') no-repeat center center;
+  background-size: cover;
+  color: #f55f44;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.download-card {
+  background-color: white;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin: 15px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-card i {
+  font-size: 2rem;
+  color: #666;
+}
+
+.download-card strong {
+  font-size: 1.1rem;
+  display: block;
+  color: #111;
+}
+
+.download-card small {
+  color: #888;
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: var(--color-letra-footer);
+  font-size: 0.9rem;
+}
+
+.btn-dark {
+  background-color: var(--color-footer);
+  border-color: var(--color-footer);
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.btn-outline-light:hover {
+  background-color: white;
+  color: #000;
+}
